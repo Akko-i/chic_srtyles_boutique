@@ -262,6 +262,7 @@ header nav, header .header-icons{
 .category{
     max-width: 1360px;
     margin: 120px auto;
+    padding: 0 20px;
 }
 .category ul{
     display: flex;
@@ -270,13 +271,13 @@ header nav, header .header-icons{
    width: 24%;
    margin: auto;
 }
-.category ul li p{
+.category ul li figcaption{
     font-family: "Times New Roman", sans-serif;
     text-align: center;
     margin-top: 20px;
     font-size: 28px;
 }
-.category figure{
+.category figure div{
     overflow:hidden;
 }
 .category img{
@@ -297,6 +298,9 @@ header nav, header .header-icons{
 .featureditem ul li{
     width: 50%;
     text-align: center;
+}
+.featureditem ul li:first-child{
+    padding: 20px;
 }
 
 /* -------------------------
@@ -346,6 +350,9 @@ header nav, header .header-icons{
     width: 50%;
     text-align: center;
 }
+.lookbook_blogs ul li:first-child{
+    padding: 20px;
+}
 
 
 /* -------------------------
@@ -358,7 +365,7 @@ footer{
 footer .container{
     max-width: 1360px;
     margin: auto;
-    padding: 80px 0 20px;  
+    padding: 80px 20px 20px;
 }
 .footer_flex{
     display: flex;
@@ -570,6 +577,7 @@ footer small{
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
         margin: 80px 0;
+        padding: 0;
     }
     .category ul {
         display: flex;
