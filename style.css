@@ -576,7 +576,7 @@ footer small{
         overflow-x: scroll;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        margin: 80px 0;
+        margin: 80px 0 60px;
         padding: 0;
     }
     .category ul {
@@ -591,6 +591,9 @@ footer small{
     .category ul li p {
         font-size: 20px;
         margin-top: 15px;
+    }
+    .category ul li figcaption{
+        font-size: 20px;
     }
 
     /* -------------------------
