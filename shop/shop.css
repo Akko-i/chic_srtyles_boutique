@@ -20,13 +20,22 @@ header{
 .sort_items{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
-
+.sort_items>div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.sort_items>div>label{
+    font-size: 14px;
+}
 #sort {
     padding: 10px 15px;
-    border: none;
     text-align: right;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 
 #product-list {
@@ -106,7 +115,7 @@ header{
             padding: 0;
         }
         #mainShop section#product-list{
-            margin: 20px 25px 40px;
+            margin: 40px 25px;
         }
 
         #product-list {
@@ -120,5 +129,14 @@ header{
         .product-item .product-figure figcaption p{
             font-size: 14px;
         }
+        #sort {
+            padding: 10px;
+            text-align: center;
+        }
+        .sort_items, .sort_items>div{
+            display: block;
+            text-align: center;
+        }
+
 
     }
