@@ -107,7 +107,44 @@ h2{
     font-weight: 400;
     line-height: 1.3;
     margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
+
+
+/* -------------------------
+    breadcrumbs
+  -------------------------*/
+nav.breadcrumbs{
+    background-color: #F0EFEA;
+    padding: 40px 0;
+    font-size: 14px;
+}
+nav.breadcrumbs ol{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+nav.breadcrumbs ol li:not(:last-child){
+    position: relative;
+    display: inline-block;
+    color: gray;
+}
+nav.breadcrumbs ol li:not(:last-child)::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px gray;
+    border-right: solid 2px gray;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: -22px;
+    bottom: 0;
+    margin: auto;
+}
+
 
 /* -------------------------
     Header
@@ -369,17 +406,21 @@ footer .container{
 }
 .footer_flex{
     display: flex;
-    gap: 120px;
+    gap: 80px;
     margin-bottom: 40px;
+}
+.footer_flex2{
+    display: flex;
+    gap: 80px;
 }
 footer ul li{
     margin-bottom: 20px;
 }
-footer ul:nth-child(2){
+footer ul.sns_icon{
     display: flex;
     gap: 30px;
 }
-footer ul:nth-child(2) li{
+footer ul.sns_icon li{
     width: 25px;
 }
 footer small{
@@ -387,6 +428,26 @@ footer small{
     text-align: right;
 }
 
+@media (max-width: 1100px) {
+    kv {
+        background-position: 22% center;
+    }
+    .kv_text{
+        width: 90%;
+        padding: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -6vh;
+        height: 35vh;
+        display: block;
+    }
+    button {
+        margin-top: 10px;
+    }
+    .main-menu{
+        gap: 15px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -401,7 +462,8 @@ footer small{
         display: none;
     }
     h2{
-        font-size: 28px;
+        font-size: 32px;
+        margin-bottom: 0;
     }
     .subtitle {
         margin-bottom: 5px;
@@ -554,7 +616,7 @@ footer small{
     -------------------------*/
     .kv{
         background-image: url(img/top/fv_sp.png);
-        height: 53vh;
+        background-position: center;
     }
     .kv_text{
         width: 90%;
@@ -654,10 +716,13 @@ footer small{
         padding: 80px 25px 20px;
     }
     .footer_flex {
-        gap: 20px;
+        gap: inherit;
         flex-direction: column;
     }
     footer ul:nth-child(2) {
         gap: 40px;
+    }
+    footer ul.sns_icon{
+        margin-top: 40px;
     }
 }
