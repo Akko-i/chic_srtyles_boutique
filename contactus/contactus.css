@@ -4,44 +4,6 @@
     width: 99.1vw;
 } */
 
-/* -------------------------
-    breadcrumbs
-  -------------------------*/
-#mainAboutus nav{
-    background-color: #F0EFEA;
-    padding: 40px 0;
-    font-size: 14px;
-}
-#mainAboutus nav ol{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-#mainAboutus nav ol li:not(:last-child){
-    position: relative;
-    display: inline-block;
-    padding-left: 20px;
-    color: #A5A5A5;
-}
-#mainAboutus nav ol li:not(:last-child)::after{
-    content: '';
-    width: 6px;
-    height: 6px;
-    border: 0;
-    border-top: solid 2px #A5A5A5;
-    border-right: solid 2px #A5A5A5;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    right: -22px;
-    bottom: 0;
-    margin: auto;
-}
-h2{
-    text-align: center;
-    margin-top: 10px;
-}
-
 
 /* -------------------------
     Privacy Policy
@@ -69,7 +31,7 @@ h2{
 }
 
 .contactus fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: none;
 }
 .contactus fieldset:first-child {
@@ -88,7 +50,6 @@ h2{
 .contactus input, .contactus textarea, .contactus button {
     width: 100%;
     padding: 15px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -114,7 +75,7 @@ h2{
 }
 
 .contactus .error-message {
-    display: none; /* 初期状態は非表示 */
+    display: none;
     color: red;
     font-size: 14px;
     margin-top: 5px;
@@ -141,14 +102,22 @@ h2{
 .contactus button::before{
     display: none;
 }
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+#countryCode {
+    margin-right: 15px;
+}
+#phone {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
 
     @media (max-width: 768px) {
         header {
             width: 100vw;
-        }
-        h2{
-            font-size: 32px;
-            margin-bottom: 0;
         }
         .contactus{
             margin: 40px 25px;
@@ -161,11 +130,17 @@ h2{
         .contactus .contactus_description {
             margin-bottom: 40px;
         }
+        .contactus fieldset{
+            margin-bottom: 20px;
+        }
         .contactus fieldset:first-child {
             flex-direction: column;
         }
         .contactus fieldset:first-child div {
             width: 100%;
+        }
+        .contactus .firstname{
+            margin-bottom: 20px;
         }
         
     }
