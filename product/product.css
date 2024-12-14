@@ -4,43 +4,6 @@ header{
     width: 99.1vw;
 }
 
-/* -------------------------
-    breadcrumbs
-  -------------------------*/
-#productPage nav{
-    background-color: #F0EFEA;
-    padding: 40px 0;
-    font-size: 14px;
-}
-#productPage nav ol{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-#productPage nav ol li:not(:last-child){
-    position: relative;
-    display: inline-block;
-    color: #A5A5A5;
-}
-#productPage nav ol li:not(:last-child)::after{
-    content: '';
-    width: 6px;
-    height: 6px;
-    border: 0;
-    border-top: solid 2px #A5A5A5;
-    border-right: solid 2px #A5A5A5;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    right: -22px;
-    bottom: 0;
-    margin: auto;
-}
-h2{
-    text-align: center;
-    margin-top: 10px;
-}
-
 
 /* -------------------------
     Product
