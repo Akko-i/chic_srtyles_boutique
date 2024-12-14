@@ -577,7 +577,7 @@ footer small{
     }
     .submenu li{
         width: 100%;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .hamburger.is-active span:nth-child(1) {
