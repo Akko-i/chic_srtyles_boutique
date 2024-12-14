@@ -80,12 +80,14 @@
     background-image: url(../img/aboutus/ceo.png);
     height: 100vh;
     background-size: cover;
+    background-position: top center;
   }
   .ceo_name{
     position: absolute;
     bottom: 20px;
     right: 20px;
     max-width: 540px;
+    width: 90%;
   }
   #mainAboutus .ceo ul li:last-child{
     text-align: center;
