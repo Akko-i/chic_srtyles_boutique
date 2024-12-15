@@ -16,9 +16,11 @@ header{
   .product-container {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 3vw;
 }
-
+.product-thumbnail{
+    width: 50%;
+}
 .product-thumbnail img {
     max-width: 100%;
     height: auto;
@@ -81,9 +83,11 @@ header{
         header {
             width: 100vw;
         }
+        .product-thumbnail{
+            width: 100%;
+        }
         .product-thumbnail img {
             width: 100%;
-            max-width: 400px;
         }
     
         .product-info {
