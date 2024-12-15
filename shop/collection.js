@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Database of products
     const products = [
         // Dresses (new to old)
-        { id: 'DR8', name: "White cotton dress", image: "../img/shop/DR8_large.png", price: 120.00, date: "2024-08-01", link: "../product/DR8.html" },
+        { id: 'DR8', name: "White cotton dress", image: "../img/shop/DR8.png", price: 120.00, date: "2024-08-01", link: "../product/DR8.html" },
     
 
     ];
