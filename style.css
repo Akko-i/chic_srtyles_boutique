@@ -128,15 +128,14 @@ nav.breadcrumbs ol{
 nav.breadcrumbs ol li:not(:last-child){
     position: relative;
     display: inline-block;
-    color: gray;
 }
 nav.breadcrumbs ol li:not(:last-child)::after{
     content: '';
     width: 6px;
     height: 6px;
     border: 0;
-    border-top: solid 2px gray;
-    border-right: solid 2px gray;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
     transform: rotate(45deg);
     position: absolute;
     top: 0;
