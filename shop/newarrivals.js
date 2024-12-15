@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Database of products
     const products = [
         // Dresses (new to old)
-        { id: 'DR8', name: "White cotton dress", image: "../img/shop/DR8.png", price: 120.00, date: "2024-08-01", link: "../product/DR8.html" },
+        { id: 'DR8', name: "White cotton dress", image: "../img/shop/DR8_large.png", price: 120.00, date: "2024-08-01", link: "../product/DR8.html" },
     
         // Accessories (new to old)
-        { id: 'AC8', name: "Double ring necklace", image: "../img/shop/AC8.png", price: 120.00, date: "2024-09-01", link: "../product/AC8.html" },
-        { id: 'AC7', name: "Marble round earrings", image: "../img/shop/AC7.png", price: 100.00, date: "2024-08-20", link: "../product/AC7.html" },  
+        { id: 'AC8', name: "Double ring necklace", image: "../img/shop/AC8_large.png", price: 120.00, date: "2024-09-01", link: "../product/AC8.html" },
+        { id: 'AC7', name: "Marble round earrings", image: "../img/shop/AC7_large.png", price: 100.00, date: "2024-08-20", link: "../product/AC7.html" },  
     ];
     
 
