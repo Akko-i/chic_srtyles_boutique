@@ -150,7 +150,6 @@ nav.breadcrumbs ol li:not(:last-child)::after{
   -------------------------*/
 header {
     background-color: #F0EFEA;
-    width: 100vw;
     z-index: 12;
 }
 header .container {
