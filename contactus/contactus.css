@@ -13,11 +13,12 @@
     margin: 80px auto;
     padding: 0 20px;
 }
-.contactus_title{
+h3.contactus_title{
     font-family: 'Times New Roman', Times, serif;
     font-size: 32px;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: 400;
 }
 .contactus .contactus_description{
     text-align: center;
@@ -123,7 +124,7 @@
             margin: 40px 25px;
             padding: 0;
         }
-        .contactus_title{
+        h3.contactus_title{
             font-size: 24px;
             line-height: 1.3;
         }
